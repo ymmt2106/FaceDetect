@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209A802F1575ACDF00F9EE46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 209A802E1575ACDF00F9EE46 /* main.c */; };
+		209A80311575ACDF00F9EE46 /* FaceDetect.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 209A80301575ACDF00F9EE46 /* FaceDetect.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		209A80281575ACDF00F9EE46 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				209A80311575ACDF00F9EE46 /* FaceDetect.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		209A802A1575ACDF00F9EE46 /* FaceDetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FaceDetect; sourceTree = BUILT_PRODUCTS_DIR; };
+		209A802E1575ACDF00F9EE46 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		209A80301575ACDF00F9EE46 /* FaceDetect.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FaceDetect.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209A80271575ACDF00F9EE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209A801F1575ACDF00F9EE46 = {
+			isa = PBXGroup;
+			children = (
+				209A802D1575ACDF00F9EE46 /* FaceDetect */,
+				209A802B1575ACDF00F9EE46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		209A802B1575ACDF00F9EE46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209A802A1575ACDF00F9EE46 /* FaceDetect */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		209A802D1575ACDF00F9EE46 /* FaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				209A802E1575ACDF00F9EE46 /* main.c */,
+				209A80301575ACDF00F9EE46 /* FaceDetect.1 */,
+			);
+			path = FaceDetect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209A80291575ACDF00F9EE46 /* FaceDetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209A80341575ACDF00F9EE46 /* Build configuration list for PBXNativeTarget "FaceDetect" */;
+			buildPhases = (
+				209A80261575ACDF00F9EE46 /* Sources */,
+				209A80271575ACDF00F9EE46 /* Frameworks */,
+				209A80281575ACDF00F9EE46 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetect;
+			productName = FaceDetect;
+			productReference = 209A802A1575ACDF00F9EE46 /* FaceDetect */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209A80211575ACDF00F9EE46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "名古屋学芸大学";
+			};
+			buildConfigurationList = 209A80241575ACDF00F9EE46 /* Build configuration list for PBXProject "FaceDetect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 209A801F1575ACDF00F9EE46;
+			productRefGroup = 209A802B1575ACDF00F9EE46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209A80291575ACDF00F9EE46 /* FaceDetect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209A80261575ACDF00F9EE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209A802F1575ACDF00F9EE46 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		209A80321575ACDF00F9EE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		209A80331575ACDF00F9EE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		209A80351575ACDF00F9EE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		209A80361575ACDF00F9EE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209A80241575ACDF00F9EE46 /* Build configuration list for PBXProject "FaceDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209A80321575ACDF00F9EE46 /* Debug */,
+				209A80331575ACDF00F9EE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209A80341575ACDF00F9EE46 /* Build configuration list for PBXNativeTarget "FaceDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209A80351575ACDF00F9EE46 /* Debug */,
+				209A80361575ACDF00F9EE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209A80211575ACDF00F9EE46 /* Project object */;
+}
