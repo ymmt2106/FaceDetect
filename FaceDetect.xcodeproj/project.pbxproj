@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		209A802F1575ACDF00F9EE46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 209A802E1575ACDF00F9EE46 /* main.c */; };
 		209A80311575ACDF00F9EE46 /* FaceDetect.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 209A80301575ACDF00F9EE46 /* FaceDetect.1 */; };
+		209A80431575AD7700F9EE46 /* libopencv_core.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A80401575AD7700F9EE46 /* libopencv_core.2.4.0.dylib */; };
+		209A80441575AD7700F9EE46 /* libopencv_highgui.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A80411575AD7700F9EE46 /* libopencv_highgui.2.4.0.dylib */; };
+		209A80451575AD7700F9EE46 /* libopencv_imgproc.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A80421575AD7700F9EE46 /* libopencv_imgproc.2.4.0.dylib */; };
+		209A80471575C9C300F9EE46 /* libopencv_objdetect.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A80461575C9C300F9EE46 /* libopencv_objdetect.2.4.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,10 @@
 		209A802A1575ACDF00F9EE46 /* FaceDetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FaceDetect; sourceTree = BUILT_PRODUCTS_DIR; };
 		209A802E1575ACDF00F9EE46 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		209A80301575ACDF00F9EE46 /* FaceDetect.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FaceDetect.1; sourceTree = "<group>"; };
+		209A80401575AD7700F9EE46 /* libopencv_core.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.0.dylib; path = ../../../../../../opt/local/lib/libopencv_core.2.4.0.dylib; sourceTree = "<group>"; };
+		209A80411575AD7700F9EE46 /* libopencv_highgui.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.0.dylib; path = ../../../../../../opt/local/lib/libopencv_highgui.2.4.0.dylib; sourceTree = "<group>"; };
+		209A80421575AD7700F9EE46 /* libopencv_imgproc.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.0.dylib; path = ../../../../../../opt/local/lib/libopencv_imgproc.2.4.0.dylib; sourceTree = "<group>"; };
+		209A80461575C9C300F9EE46 /* libopencv_objdetect.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.0.dylib; path = ../../../../../../opt/local/lib/libopencv_objdetect.2.4.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209A80431575AD7700F9EE46 /* libopencv_core.2.4.0.dylib in Frameworks */,
+				209A80471575C9C300F9EE46 /* libopencv_objdetect.2.4.0.dylib in Frameworks */,
+				209A80441575AD7700F9EE46 /* libopencv_highgui.2.4.0.dylib in Frameworks */,
+				209A80451575AD7700F9EE46 /* libopencv_imgproc.2.4.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,10 @@
 		209A801F1575ACDF00F9EE46 = {
 			isa = PBXGroup;
 			children = (
+				209A80461575C9C300F9EE46 /* libopencv_objdetect.2.4.0.dylib */,
+				209A80401575AD7700F9EE46 /* libopencv_core.2.4.0.dylib */,
+				209A80411575AD7700F9EE46 /* libopencv_highgui.2.4.0.dylib */,
+				209A80421575AD7700F9EE46 /* libopencv_imgproc.2.4.0.dylib */,
 				209A802D1575ACDF00F9EE46 /* FaceDetect */,
 				209A802B1575ACDF00F9EE46 /* Products */,
 			);
@@ -174,14 +190,31 @@
 		209A80351575ACDF00F9EE46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "/opt/local/include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/opt/local/lib/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
 		209A80361575ACDF00F9EE46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/opt/local/include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/opt/local/lib/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -204,6 +237,7 @@
 				209A80361575ACDF00F9EE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
